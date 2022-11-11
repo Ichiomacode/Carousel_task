@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel task</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./script.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <h1>My Work space</h1>
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://s3.envato.com/files/297568272/IMG_0056.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://media.istockphoto.com/id/1266388738/photo/blank-screen-computer-on-table-with-office-in-the-background.jpg?s=170667a&w=0&k=20&c=POhFELrDFGOHCvpjxS0kWoC6OagmQMCi4ZFvctA_7Nk="
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://mcdn.wallpapersafari.com/medium/89/45/bXVhG8.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://t3.ftcdn.net/jpg/04/40/20/68/360_F_440206892_mMYCRWWhiKKGXJHkrS5zFGIUN5vxvYDY.jpg"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="nagivation">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
